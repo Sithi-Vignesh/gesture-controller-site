@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --black: #0A0A0A;
+    --yellow: #FFE600;
+    --yellow-dim: #FFE60033;
+    --yellow-glow: #FFE60066;
+    --white: #F5F5F5;
+    --gray-dark: #141414;
+    --gray-mid: #1E1E1E;
+    --gray-text: #888888;
+  }
+
+  /* Custom cursor hides default pointer */
+  * {
+    cursor: none !important;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px var(--yellow-glow);
+  }
+  .box-glow {
+    box-shadow: 0 0 20px var(--yellow-dim);
+  }
+}
