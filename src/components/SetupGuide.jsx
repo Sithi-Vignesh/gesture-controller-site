@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Monitor, Keyboard, Download, ChevronRight, ChevronDown, Play } from 'lucide-react';
 import clsx from 'clsx';
+import { RELEASE } from '../config/release';
 
 export default function SetupGuide() {
   const [view, setView] = useState('doc'); // 'doc' or 'video'
@@ -26,7 +27,7 @@ export default function SetupGuide() {
       icon: <Download size={24} className="text-brand-white" />,
       title: "Download & Launch",
       body: "Run GestureController_Setup.exe. Launch Gesture Controller, open LDPlayer, enter a match and start gesturing.",
-      action: <a href="https://github.com/Sithi-Vignesh/Gesture-Controller/releases/download/v1.0.0/GestureController_Setup.exe" className="mt-4 inline-block font-display text-sm bg-brand-yellow text-brand-black px-6 py-2 rounded-full hover:scale-105 active:scale-95 transition-all">DOWNLOAD V1</a>
+      action: <a href={RELEASE.downloadUrl} className="mt-4 inline-block font-display text-sm bg-brand-yellow text-brand-black px-6 py-2 rounded-full hover:scale-105 active:scale-95 transition-all">DOWNLOAD V1</a>
     }
   ];
 

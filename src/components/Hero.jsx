@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import HandSkeleton from '../effects/HandSkeleton';
 import { ChevronDown, Play } from 'lucide-react';
+import { RELEASE } from '../config/release';
 
 export default function Hero() {
   const containerVariants = {
@@ -62,7 +63,7 @@ export default function Hero() {
 
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-6">
             <a 
-              href="https://github.com/Sithi-Vignesh/Gesture-Controller/releases/download/v1.0.0/GestureController_Setup.exe"
+              href={RELEASE.downloadUrl}
               className="font-display text-lg bg-brand-yellow text-brand-black px-8 py-3 rounded-full hover:scale-105 hover:shadow-[0_0_20px_rgba(255,230,0,0.4)] active:scale-95 transition-all duration-200 tracking-wider text-center flex items-center justify-center gap-2"
             >
               <ChevronDown size={20} className="stroke-[3]" />
@@ -70,7 +71,7 @@ export default function Hero() {
             </a>
             
             <a 
-              href="https://github.com/Sithi-Vignesh/Gesture-Controller" 
+              href={RELEASE.repoUrl}
               target="_blank" 
               rel="noreferrer"
               className="font-display text-lg border-2 border-brand-yellow text-brand-yellow px-8 py-3 rounded-full hover:bg-brand-yellow/10 hover:shadow-[0_0_15px_rgba(255,230,0,0.2)] active:scale-95 transition-all duration-200 tracking-wider text-center"

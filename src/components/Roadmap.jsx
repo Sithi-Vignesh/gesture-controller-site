@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { RELEASE } from '../config/release';
 
 export default function Roadmap() {
   const nodes = [
@@ -10,7 +11,7 @@ export default function Roadmap() {
       dotClass: "bg-brand-yellow shadow-[0_0_15px_rgba(255,230,0,0.8)] animate-pulse",
       title: "Gesture Controller V1",
       description: "7 gestures. Brawl Stars on LDPlayer. Windows installer. Real-time 30 FPS pipeline. Shipped.",
-      link: { text: "GitHub Release →", url: "https://github.com/Sithi-Vignesh/Gesture-Controller/releases/tag/v1.0.0" }
+      link: { text: "GitHub Release →", url: RELEASE.releasePageUrl}
     },
     {
       id: "v2",

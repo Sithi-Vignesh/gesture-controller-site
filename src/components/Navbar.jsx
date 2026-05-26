@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { RELEASE } from '../config/release';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -61,7 +62,7 @@ export default function Navbar() {
             </div>
             
             <a 
-              href="https://github.com/Sithi-Vignesh/Gesture-Controller/releases/download/v1.0.0/GestureController_Setup.exe"
+              href={RELEASE.downloadUrl}
               className="font-display text-[15px] bg-brand-yellow text-brand-black px-6 py-2 rounded-full hover:scale-105 hover:shadow-[0_0_15px_rgba(255,230,0,0.4)] active:scale-95 transition-all duration-200 tracking-wider mt-1"
             >
               DOWNLOAD V1
@@ -100,7 +101,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a 
-                href="#setup"
+                href={RELEASE.downloadUrl}
                 onClick={() => setMobileMenuOpen(false)}
                 className="mt-8 font-display text-2xl bg-brand-yellow text-brand-black px-10 py-4 rounded-full tracking-wider"
               >
