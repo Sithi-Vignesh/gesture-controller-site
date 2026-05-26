@@ -48,7 +48,7 @@ export default function Hero() {
         >
           <motion.div variants={itemVariants} className="flex items-center gap-2 mb-6">
             <span className="w-2 h-2 rounded-full bg-brand-yellow animate-pulse" />
-            <span className="font-mono text-xs text-brand-yellow tracking-widest">[ V1.0.0 — NOW AVAILABLE ]</span>
+            <span className="font-mono text-xs text-brand-yellow tracking-widest">{RELEASE.label}</span>
           </motion.div>
 
           <motion.h1 variants={itemVariants} className="font-display text-[56px] md:text-[96px] leading-[0.9] tracking-wide text-brand-white mb-6">

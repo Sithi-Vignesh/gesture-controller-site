@@ -86,7 +86,7 @@ export default function CTAFooter() {
                  <path d="M12.4 6.7C13.2 7 14.5 8 14.5 8C14.5 8 15.5 8.5 16.5 8.8C17.5 9.1 20 9.5 20 9.5C20 9.5 20.8 10 21 11C21.2 12 21 13 20 13.5C19 14 17 14.2 17 14.2C17 14.2 17.5 15.2 17.5 16.5C17.5 17.8 16.5 19 15.5 19.5C14.5 20 13 20.5 13 20.5L11.5 23H8L9.5 20C9.5 20 7 19.5 6 18.5C5 17.5 4 15.5 4 15.5C4 15.5 2 15 1.5 14C1 13 1 11.5 1.5 10.5C2 9.5 3 9 3 9C3 9 3.5 7.5 4 6.5C4.5 5.5 5.5 4.5 7 4C8.5 3.5 10.5 3.5 10.5 3.5C10.5 3.5 11.6 6.4 12.4 6.7Z" />
             </svg>
             <span className="font-display tracking-wider text-brand-white text-sm mt-1">Gesture Controller</span>
-            <span className="font-mono text-xs text-brand-gray-text px-2 py-0.5 rounded bg-brand-white/5 border border-brand-white/10 ml-2">v1.0.0</span>
+            <span className="font-mono text-xs text-brand-gray-text px-2 py-0.5 rounded bg-brand-white/5 border border-brand-white/10 ml-2">{RELEASE.label}</span>
           </div>
 
           {/* Center Links */}
