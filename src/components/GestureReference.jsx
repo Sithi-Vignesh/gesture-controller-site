@@ -13,55 +13,13 @@ export default function GestureReference() {
   const scaleY = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   const gestures = [
-    {
-      id: 1,
-      image: 'move.png',
-      name: "Left Fist + Drag",
-      mapping: "→ WASD (8-DIR)",
-      description: "8-direction control. Small wrist movements, big plays."
-    },
-    {
-      id: 2,
-      image: 'attack.png',
-      name: "Right Pinch Tap",
-      mapping: "→ E (Instant Attack)",
-      description: "Quick tap. Instant fire. No aim needed."
-    },
-    {
-      id: 3,
-      image: 'aim.png',
-      name: "Right Pinch + Drag",
-      mapping: "→ X (Aimed Attack)",
-      description: "Hold and drag. Lock your shot."
-    },
-    {
-      id: 4,
-      image: 'super.png',
-      name: "Right Fist Tap",
-      mapping: "→ F (Super)",
-      description: "Unleash your super. One fist tap."
-    },
-    {
-      id: 5,
-      image: 'aimed-super.png',
-      name: "Right Fist + Drag",
-      mapping: "→ C (Aimed Super)",
-      description: "Precision super. Drag to aim."
-    },
-    {
-      id: 6,
-      image: 'hypercharge.png',
-      name: "Right Peace ✌️",
-      mapping: "→ R (Hypercharge)",
-      description: "Flash the peace sign. Activate hypercharge."
-    },
-    {
-      id: 7,
-      image: 'gadget.png',
-      name: "Right L-Shape 🤙",
-      mapping: "→ Q (Gadget)",
-      description: "Drop the gadget. Game-changing."
-    }
+    { id: 1, image: 'fist_left.png', name: "Left Fist + Drag", mapping: "→ WASD (8-DIR)", description: "8-direction control. Small wrist movements, big plays." },
+    { id: 2, image: 'pinch.png', name: "Right Pinch Tap", mapping: "→ E (Instant Attack)", description: "Quick tap. Instant fire. No aim needed." },
+    { id: 3, image: 'pinch_drag.png', name: "Right Pinch + Drag", mapping: "→ X (Aimed Attack)", description: "Hold and drag. Lock your shot." },
+    { id: 4, image: 'fist_right.png', name: "Right Fist Tap", mapping: "→ F (Super)", description: "Unleash your super. One fist tap." },
+    { id: 5, image: 'fist_drag.png', name: "Right Fist + Drag", mapping: "→ C (Aimed Super)", description: "Precision super. Drag to aim." },
+    { id: 6, image: 'peace.png', name: "Right Peace ✌️", mapping: "→ R (Hypercharge)", description: "Flash the peace sign. Activate hypercharge." },
+    { id: 7, image: 'lshape.png', name: "Right L-Shape 👆", mapping: "→ Q (Gadget)", description: "Drop the gadget. Game-changing." },
   ];
 
   return (
