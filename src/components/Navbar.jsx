@@ -34,7 +34,7 @@ export default function Navbar() {
           
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 z-50">
-            <img src="/icon.png" alt="Icon" className="w-7 h-7" onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
+            <img src="/icon-transparent.png" alt="Icon" className="w-7 h-7" onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
             {/* Fallback svg if icon missing */}
             <svg style={{display: 'none'}} className="w-7 h-7 text-brand-yellow" viewBox="0 0 24 24" fill="currentColor">
               <path d="M14 0C14 0 13.9 1.9 14.8 3.1C15.6 4.3 17 5 17 5L15 6.5C15 6.5 13.8 5.4 12.8 5C11.8 4.6 10 4.5 10 4.5L10 0.5C10 0.5 11 0.8 11.5 1.5C12 2.2 12.2 3.5 12.2 3.5C12.2 3.5 12.8 3.8 13.2 4.2C13.6 4.6 14 0 14 0Z" />
