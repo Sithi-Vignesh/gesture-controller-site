@@ -26,7 +26,7 @@ export default function SetupGuide() {
       icon: <Download size={24} className="text-brand-white" />,
       title: "Download & Launch",
       body: "Run GestureController_Setup.exe. Launch Gesture Controller, open LDPlayer, enter a match and start gesturing.",
-      action: <button className="mt-4 font-display text-sm bg-brand-yellow text-brand-black px-6 py-2 rounded-full hover:scale-105 active:scale-95 transition-all">DOWNLOAD V1</button>
+      action: <a href="https://github.com/Sithi-Vignesh/Gesture-Controller/releases/download/v1.0.0/GestureController_Setup.exe" className="mt-4 inline-block font-display text-sm bg-brand-yellow text-brand-black px-6 py-2 rounded-full hover:scale-105 active:scale-95 transition-all">DOWNLOAD V1</a>
     }
   ];
 
