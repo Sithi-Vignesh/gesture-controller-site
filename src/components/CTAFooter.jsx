@@ -45,14 +45,14 @@ export default function CTAFooter() {
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-8"
           >
             <a 
-              href="#setup"
+              href="https://github.com/Sithi-Vignesh/Gesture-Controller/releases/download/v1.0.0/GestureController_Setup.exe"
               className="font-display text-lg bg-brand-yellow text-brand-black px-10 py-4 rounded-full hover:scale-105 hover:shadow-[0_0_20px_rgba(255,230,0,0.4)] active:scale-95 transition-all duration-200 tracking-wider flex items-center justify-center gap-2"
             >
               <ChevronDown size={20} className="stroke-[3]" />
               DOWNLOAD V1
             </a>
             <a 
-              href="https://github.com" 
+              href="https://github.com/Sithi-Vignesh/Gesture-Controller" 
               target="_blank" 
               rel="noreferrer"
               className="font-display text-lg border border-brand-white/20 text-brand-white px-10 py-4 rounded-full hover:bg-brand-white/5 hover:border-brand-white/40 active:scale-95 transition-all duration-200 tracking-wider flex items-center justify-center gap-2"
