@@ -62,7 +62,7 @@ export default function Hero() {
 
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-6">
             <a 
-              href="#setup"
+              href="https://github.com/Sithi-Vignesh/Gesture-Controller/releases/download/v1.0.0/GestureController_Setup.exe"
               className="font-display text-lg bg-brand-yellow text-brand-black px-8 py-3 rounded-full hover:scale-105 hover:shadow-[0_0_20px_rgba(255,230,0,0.4)] active:scale-95 transition-all duration-200 tracking-wider text-center flex items-center justify-center gap-2"
             >
               <ChevronDown size={20} className="stroke-[3]" />
@@ -70,7 +70,7 @@ export default function Hero() {
             </a>
             
             <a 
-              href="https://github.com" 
+              href="https://github.com/Sithi-Vignesh/Gesture-Controller" 
               target="_blank" 
               rel="noreferrer"
               className="font-display text-lg border-2 border-brand-yellow text-brand-yellow px-8 py-3 rounded-full hover:bg-brand-yellow/10 hover:shadow-[0_0_15px_rgba(255,230,0,0.2)] active:scale-95 transition-all duration-200 tracking-wider text-center"
@@ -94,7 +94,7 @@ export default function Hero() {
               ✊ Move
             </motion.div>
             <motion.div initial="hidden" animate="visible" variants={chipVariants} transition={{ delay: 0.95 }} className="bg-brand-gray-dark border border-brand-yellow/20 px-4 py-2 rounded-lg font-mono text-sm text-brand-white shadow-lg backdrop-blur-sm ml-6">
-              🤙 Gadget
+              👆 Gadget
             </motion.div>
             <motion.div initial="hidden" animate="visible" variants={chipVariants} transition={{ delay: 1.1 }} className="bg-brand-gray-dark border border-brand-yellow/20 px-4 py-2 rounded-lg font-mono text-sm text-brand-white shadow-lg backdrop-blur-sm">
               ✌️ Hypercharge
