@@ -60,7 +60,7 @@ export default function CustomCursor() {
     <>
       {/* Outer Halo */}
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-50 rounded-full flex items-center justify-center mix-blend-screen"
+        className="fixed top-0 left-0 pointer-events-none z-[9999] rounded-full flex items-center justify-center mix-blend-screen"
         animate={{
           x: mousePosition.x - haloSize / 2,
           y: mousePosition.y - haloSize / 2,
@@ -76,7 +76,7 @@ export default function CustomCursor() {
       
       {/* Inner Dot */}
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-50 rounded-full bg-brand-yellow"
+        className="fixed top-0 left-0 pointer-events-none z-[9999] rounded-full bg-brand-yellow"
         animate={{
           x: mousePosition.x - size / 2,
           y: mousePosition.y - size / 2,
@@ -88,7 +88,7 @@ export default function CustomCursor() {
       
       {/* Trailing Echo */}
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-40 rounded-full bg-brand-yellow opacity-40"
+        className="fixed top-0 left-0 pointer-events-none z-[9998] rounded-full bg-brand-yellow opacity-40"
         animate={{
           x: mousePosition.x - (size - 2) / 2,
           y: mousePosition.y - (size - 2) / 2,
