@@ -10,7 +10,7 @@ export default function Roadmap() {
       dotClass: "bg-brand-yellow shadow-[0_0_15px_rgba(255,230,0,0.8)] animate-pulse",
       title: "Gesture Controller V1",
       description: "7 gestures. Brawl Stars on LDPlayer. Windows installer. Real-time 30 FPS pipeline. Shipped.",
-      link: { text: "GitHub Release →", url: "#" }
+      link: { text: "GitHub Release →", url: "https://github.com/Sithi-Vignesh/Gesture-Controller/releases/tag/v1.0.0" }
     },
     {
       id: "v2",
@@ -100,7 +100,7 @@ export default function Roadmap() {
                   </p>
 
                   {node.link && (
-                    <a href={node.link.url} className="mt-4 font-mono text-xs text-brand-yellow hover:text-brand-white transition-colors">
+                    <a href={node.link.url} target="_blank" rel="noreferrer" className="mt-4 font-mono text-xs text-brand-yellow hover:text-brand-white transition-colors">
                       {node.link.text}
                     </a>
                   )}
