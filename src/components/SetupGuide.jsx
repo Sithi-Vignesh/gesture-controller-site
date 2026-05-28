@@ -73,7 +73,7 @@ export default function SetupGuide() {
                   : "border border-brand-gray-text text-brand-gray-text hover:border-brand-white hover:text-brand-white"
               )}
             >
-              📄 DOCUMENTATION
+              DOCUMENTATION
             </button>
             <button 
               onClick={() => setView('video')}
@@ -84,7 +84,7 @@ export default function SetupGuide() {
                   : "border border-brand-gray-text text-brand-gray-text hover:border-brand-white hover:text-brand-white"
               )}
             >
-              🎥 VIDEO
+              VIDEO
             </button>
           </motion.div>
         </div>
