@@ -5,6 +5,8 @@ import { ChevronDown, Play } from 'lucide-react';
 import { RELEASE } from '../config/release';
 
 export default function Hero() {
+  const [videoLoaded, setVideoLoaded] = React.useState(false);
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -15,6 +17,7 @@ export default function Hero() {
       }
     }
   };
+
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -109,13 +112,29 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="relative w-full max-w-[500px] aspect-[16/10] bg-brand-gray-dark rounded-xl border border-brand-gray-mid shadow-[0_20px_50px_rgba(255,230,0,0.05)] animate-bob"
           >
-            {/* Screen Content Placeholder */}
-            <div className="absolute inset-2 bg-brand-black rounded-lg overflow-hidden flex flex-col items-center justify-center border border-brand-gray-mid">
-              <div className="w-16 h-16 rounded-full bg-brand-yellow-dim flex items-center justify-center mb-4 relative">
-                <div className="absolute inset-0 rounded-full border-2 border-brand-yellow animate-ping opacity-20"></div>
-                <Play className="text-brand-yellow fill-brand-yellow ml-1" size={24} />
-              </div>
-              <span className="font-mono text-brand-gray-text text-sm">Demo Coming Soon</span>
+            {/* Screen Content */}
+            <div className="absolute inset-2 bg-brand-black rounded-lg overflow-hidden border border-brand-gray-mid">
+              {!videoLoaded && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+                  <div className="w-16 h-16 rounded-full bg-brand-yellow-dim flex items-center justify-center mb-4 relative">
+                    <div className="absolute inset-0 rounded-full border-2 border-brand-yellow animate-ping opacity-20"></div>
+                    <Play className="text-brand-yellow fill-brand-yellow ml-1" size={24} />
+                  </div>
+                  <span className="font-mono text-brand-gray-text text-sm">Demo Loading...</span>
+                </div>
+              )}
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                onLoadedData={() => setVideoLoaded(true)}
+                className={`w-full h-full object-cover transition-opacity duration-700 ${
+                  videoLoaded ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
+                <source src="/gus-clutch.mp4" type="video/mp4" />
+              </video>
             </div>
             {/* Mockup Base */}
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-2/3 h-4 bg-brand-gray-mid rounded-b-xl"></div>
