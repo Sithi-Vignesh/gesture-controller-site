@@ -167,13 +167,15 @@ export default function SetupGuide() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
-                className="w-full aspect-video bg-brand-gray-dark rounded-xl border border-brand-gray-mid shadow-[0_0_30px_rgba(255,230,0,0.05)] overflow-hidden flex flex-col items-center justify-center group"
+                className="w-full aspect-video rounded-xl overflow-hidden border border-brand-gray-mid shadow-[0_0_30px_rgba(255,230,0,0.05)]"
               >
-                <div className="w-16 h-16 rounded-full border border-brand-yellow/30 flex items-center justify-center mb-4 relative">
-                  <div className="absolute inset-0 rounded-full border-2 border-brand-yellow animate-ping opacity-20" />
-                  <Play className="text-brand-yellow fill-brand-yellow ml-1" size={24} />
-                </div>
-                <p className="font-mono text-brand-gray-text text-sm">Setup tutorial dropping soon</p>
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/MeA3YatMQ_c"
+                  title="Gesture Controller V1 Setup Guide"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               </motion.div>
             )}
 
